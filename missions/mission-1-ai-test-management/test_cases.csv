@@ -1,0 +1,44 @@
+Test Case ID,Test Case Name,Test Type,Priority,User Story,Steps,Expected Result,Status,Automated
+TC-001,Login with Valid Credentials,Functional,High,US-04,"1. Navigate to login page
+2. Enter username: testuser@finstack.com
+3. Enter password: TestPassword123
+4. Click Login button",Dashboard page loads successfully and user is authenticated,Ready,Yes
+TC-002,Login with Invalid Password,Functional,High,US-04,"1. Navigate to login page
+2. Enter username: testuser@finstack.com
+3. Enter incorrect password
+4. Click Login button",Error message displayed - 'Invalid credentials',Ready,No
+TC-003,Dashboard Overview - Balance Display,Functional,High,US-01,"1. Login with valid credentials
+2. Navigate to Dashboard
+3. Verify balance section is visible",Account balance is displayed correctly with formatting,Ready,No
+TC-004,Dashboard Overview - Key Metrics,Functional,High,US-01,"1. Login with valid credentials
+2. Navigate to Dashboard
+3. Check key metrics section",All key metrics (Income, Expenses, Savings) are visible,Ready,No
+TC-005,View Transaction History,Functional,High,US-02,"1. Login with valid credentials
+2. Navigate to Accounts page
+3. View transaction list",Transaction history is displayed in chronological order,Ready,No
+TC-006,Filter Transactions by Date,Functional,Medium,US-02,"1. Go to transaction history
+2. Select date range filter
+3. Apply filter",Transactions are filtered based on selected date range,Ready,No
+TC-007,Filter Transactions by Type,Functional,Medium,US-02,"1. Go to transaction history
+2. Select transaction type filter
+3. Apply filter",Only selected transaction types are displayed,Ready,No
+TC-008,EMI Calculator - Basic Calculation,Functional,High,US-03,"1. Navigate to Loan calculator page
+2. Enter loan amount: 500000
+3. Enter interest rate: 8.5%
+4. Enter tenure: 60 months
+5. Click Calculate",EMI amount is calculated and displayed correctly,Ready,Yes
+TC-009,EMI Calculator - Different Tenure,Functional,Medium,US-03,"1. Navigate to Loan calculator
+2. Enter loan amount: 1000000
+3. Enter interest rate: 9%
+4. Enter tenure: 84 months
+5. Click Calculate",EMI calculation is accurate for given tenure,Ready,No
+TC-010,EMI Calculator - Interest Rate Variation,Functional,Medium,US-03,"1. Navigate to Loan calculator
+2. Enter same loan amount with different interest rates
+3. Verify EMI changes accordingly",EMI varies inversely with interest rate changes,Ready,No
+TC-011,Transfer Between Accounts,Functional,High,US-02,"1. Navigate to Accounts page
+2. Select Source and Destination accounts
+3. Enter transfer amount
+4. Click Transfer",Transaction is processed and balance is updated,Ready,No
+TC-012,Login Session Timeout,Functional,Medium,US-04,"1. Login successfully
+2. Wait for inactivity timeout (15 mins)
+3. Attempt to perform action",User is redirected to login page with session timeout message,Ready,No
