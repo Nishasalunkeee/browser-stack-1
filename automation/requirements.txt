@@ -1,0 +1,30 @@
+# BrowserStack Testathon - FinStack Automation Requirements
+# Python 3.8+
+
+# Selenium WebDriver for browser automation
+selenium==4.15.2
+
+# WebDriver Manager for automatic driver management
+webdriver-manager==4.0.1
+
+# BrowserStack integration
+browserstack-local==1.2.8
+
+# Testing frameworks
+pytest==7.4.3
+pytest-html==4.1.1
+pytest-xdist==3.5.0
+
+# Reporting and logging
+reporting-engine==1.0.0
+python-dotenv==1.0.0
+
+# Utilities
+requests==2.31.0
+PyYAML==6.0.1
+
+# For performance testing
+locust==2.17.0
+
+# JSON schema validation
+jsonschema==4.20.0
